@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel helper</title>
+        <meta type="description" content="maps + translate all in one place">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header role="presentation">
+            <h1>Maps + Translate</h1>
+        </header>
+
+        <section role="main">
+            <form id="maps-form">
+                <fieldset>
+                  <legend>Maps</legend>
+                  <label for="city">Enter city name:</label>
+                  <input id="address" type="textbox" name="city" value="San Francisco, USA">
+                  <input id="submit" type="button" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="map"></section>
+
+        <section role="main">
+            <form id="translate-form">
+                <fieldset>
+                    <legend>Translate</legend>
+                    <textarea id="text-to-translate" placeholder="Text to translate"></textarea>
+                    <select class="target-language">
+                            <option selected disabled>Choose Language</option>
+                    </select>
+                    <input id="translate" type="button" value="Translate">
+                </fieldset>
+            </form>
+        </section>
+
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZPP2pokVpAEMTOq6WRrYp3eUd7cU1O90&callback=initMap">
+        </script>
+    </body>
+</html>

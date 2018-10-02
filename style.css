@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+#map {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  top:50px;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+fieldset {
+  padding: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#translate-form {
+  display: block;
+  position: absolute;
+  top: 550px;
+  left:560px;
+}
+

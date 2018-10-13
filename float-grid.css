@@ -1,0 +1,51 @@
+.row {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+  
+  .row::before,
+  .row::after {
+    display: table;
+    content: '';
+  }
+  
+  .row::after {
+    clear: both;
+  }
+  
+  .col-2, .col-4, .col-6, .col-8, .col-12 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+  }
+  
+  .col-2, .col-4, .col-8, .col-6, .col-12 {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 640px) {
+      /* 2 columns */
+    .col-2 {
+        width: 16.6666%;
+    }
+    
+      /* 4 columns */
+    .col-4 {
+        width: 33.3333%;
+    }
+    
+      /* 6 columns */
+    .col-6 {
+        width: 50%;
+    }
+
+      /* 8 columns */
+    .col-8 {
+        width: 66.6666%;
+    }
+     /* 12 columns */
+    .col-12 {
+      width: 100%;
+    }
+  }

@@ -1,45 +1,139 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 #map {
   position: relative;
-  height: 300px;
-  width: 400px;
-  top:50px;
+  height: 500px;
+  width: 100%;
   margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 100px;
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f4f5f7;
+  font-size: 18px;
 }
 
-#floating-panel {
-  position: absolute;
-  top: 10px;
-  left: 25%;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
+header {
+  top: 0;
+  left: 0;
+  background-image: url("https://editions.zumtobel.com/wp-content/themes/zumtobel/pub/img/verlauf-text.jpg");
+  background-color: #e7717d;
   text-align: center;
-  font-family: 'Roboto','sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#maps-form {
+  background-color: #c2cad0;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+}
+
+#translate-form fieldset {
+  width: 80%;
+  background-color: #c2cad0;
+  border-radius: 10px;
+  margin: 0 auto 20px;
 }
 
 fieldset {
-  padding: 15px;
-  max-width: 500px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin: 0 auto;
+  border: none;
+  color: white;
 }
 
-#translate-form {
-  display: block;
-  position: absolute;
-  top: 550px;
-  left:560px;
+.travel-image img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 2%;
+  padding-right:5%;
+}
+ 
+.travel-image, .app-text {
+  display: inline-block; 
 }
 
+.app-text h2 {
+  padding-bottom: 10px;
+}
+
+.app-text {
+  padding-top: 5% ;
+  padding-bottom: 5%;
+}
+
+.app-text p {
+  text-align: justify;
+}
+
+.app-explanation {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+legend {
+  width: 100%;
+  line-height: 20px;
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0px auto 25px;
+  padding-top: 20px;
+}
+
+input[type="text"], select, textarea, input[type="button"] {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  padding: 15px;
+  border: 2px solid #e7e7e7;
+  border-radius: 3px;
+  background: #fcfcfc;
+  margin: 10px auto 20px;
+  transition: opacity 0.4s;
+  text-align: left;
+}
+
+input[type="button"] {
+  height: auto;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background: #15CD72;
+  border: 0;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background-color: #0CB863;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+textarea {
+  height: 100px;
+}
+
+@media only screen and (min-width: 640px) {
+  #maps-form {
+    max-width: 20%;
+    position: absolute;
+    z-index: 5;
+  }
+}

@@ -7,6 +7,9 @@
 <li>Javascript</li>
 <li>jQuery</li>
 <li>AJAX</li>
+<h3>API</h3>
+<li>Google maps</li>
+<li>Google Translate</li>
 <h2>Features</h2>
 <li>Shows the top results of the type of place(ex:tourist spot) in the given city on map</li>
 <li>The translator's language is set to the most spoken language in the city</li>
